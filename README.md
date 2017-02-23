@@ -46,3 +46,22 @@ public class HomeController : Controller
     <li feature="Home:Contact"><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
 </ul>
 ```
+## Config
+
+Turn on/off routes and elements with your `appsettings.json` file.
+```json
+{
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "Features": {
+    "Home": {
+      "About": true,
+      "Contact": false
+    }
+  }
+}
+```

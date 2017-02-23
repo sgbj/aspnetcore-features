@@ -6,6 +6,8 @@ http://www.batary.io/blog/feature-gates
 
 ## Controllers
 
+Disable routes when a feature is off.
+
 ```csharp
 public class HomeController : Controller
 {
@@ -39,6 +41,8 @@ public class HomeController : Controller
 
 ## Views
 
+Remove elements from your views when a feature is turned off.
+
 ```html
 <ul class="nav navbar-nav">
     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
@@ -48,7 +52,8 @@ public class HomeController : Controller
 ```
 ## Config
 
-Turn on/off routes and elements with your `appsettings.json` file.
+Turn features on and off in your `appsettings.json` file.
+
 ```json
 {
   "Logging": {
